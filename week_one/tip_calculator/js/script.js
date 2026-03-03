@@ -10,9 +10,11 @@ formEl.addEventListener('submit',function(e) {
           
           const amountEl = document.getElementById('amount');
           const tipEl = document.getElementById('tip-amount');
+          const peopleEl = document.getElementById('people')
           
           const amountValue = Number(amountEl.value.trim());
           const tipValue = Number(tipEl.value.trim());
+          const peopleValue = Number(peopleEl.value.trim());
           
           let total = 0;
           let tip = (tipValue/100)*amountValue
@@ -20,6 +22,8 @@ formEl.addEventListener('submit',function(e) {
           
          total = tip + amountValue
           console.log(total)
+          
+          const amountPerPerson = total/peopleValue
           
           
           const tipDetails = document.querySelector('.tip-details');
@@ -30,5 +34,9 @@ formEl.addEventListener('submit',function(e) {
           
           const totalAmount = document.querySelector('.amount-details');
           totalAmount.textContent=total.toFixed(2);
+          
+          const personDetails = document.querySelector('.amount-per-person');
+          
+          personDetails.textContent= amountPerPerson;
      })
 })
