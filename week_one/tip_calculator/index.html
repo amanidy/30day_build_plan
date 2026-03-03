@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tip Calculator</title>
+</head>
+
+<body>
+  <header>
+    <h2>Welcome to tip calculator!👋🏽</h2>
+    <p>Ready to solve your complex calculations?</p>
+  </header>
+  
+  <section>
+    <form id="form" class="tip-form">
+      
+      <label for="Amount">Amount:</label>
+      <input type="number" name="amount" id="amount" min="0" required />
+      
+      <div>
+        <label for="Tip">Tip:</label>
+        
+        
+        <div>
+          <button class="subtract" type="submit">-</button>
+        <input type="number" name="tip-amount" id="tip-amount" value="" required />
+        <button class="increment" type="submit">+</button>
+        </div>
+      </div>
+      
+      <button id="calculate-btn" type="submit">Calculate</button>
+      
+    </form>
+  </section>
+  
+  <section>
+    <div class="tip-details">
+      
+    </div>
+    <div class="amount-details">
+      
+    </div>
+  </section>
+  
+  <script src='./js/script.js' type="text/javascript" charset="utf-8">
+    
+  </script>
+</body>
+
+</html>
