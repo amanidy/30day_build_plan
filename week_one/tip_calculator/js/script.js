@@ -3,10 +3,10 @@ let total = 0
 const formEl = document.getElementById('form');
 const buttonEl = document.getElementById('calculate-btn');
 
-formEl.addEventListener('submit',function(e) {
-     e.preventDefault();
+
      
-     buttonEl.addEventListener('click',()=>{
+     buttonEl.addEventListener('click',(e)=>{
+       e.preventDefault();
           
           const amountEl = document.getElementById('amount');
           const tipEl = document.getElementById('tip-amount');
@@ -38,5 +38,15 @@ formEl.addEventListener('submit',function(e) {
           const personDetails = document.querySelector('.amount-per-person');
           
           personDetails.textContent= amountPerPerson;
+          
+          amountEl.value = "";
+          tipEl.value = "";
+          peopleEl.value="";
      })
-})
+     
+     const resetBtnEl = document.getElementById('reset-btn');
+     
+     resetBtnEl.addEventListener('click',()=>{
+       location.reload();
+       
+     })
