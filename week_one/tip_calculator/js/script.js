@@ -33,6 +33,7 @@ const buttonEl = document.getElementById('calculate-btn');
           
           
           const totalAmount = document.querySelector('.amount-details');
+          
           totalAmount.textContent=total.toFixed(2);
           
           const personDetails = document.querySelector('.amount-per-person');
@@ -50,3 +51,7 @@ const buttonEl = document.getElementById('calculate-btn');
        location.reload();
        
      })
+     
+     
+     
+

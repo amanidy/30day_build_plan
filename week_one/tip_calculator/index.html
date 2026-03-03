@@ -4,10 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./index.css"  />
   <title>Tip Calculator</title>
 </head>
 
 <body>
+  <div class="container">
+    
+  
   <header>
     <h2>Welcome to tip calculator!👋🏽</h2>
     <p>Ready to solve your complex calculations?</p>
@@ -35,9 +39,9 @@
         
         
         <div>
-          <button class="subtract" type="submit">-</button>
+          <button class="subtract" type="button">-</button>
         <input type="number" name="people" id="people" value="" required />
-        <button class="increment" type="submit">+</button>
+        <button class="increment" type="button">+</button>
         </div>
       </div>
       
@@ -45,9 +49,11 @@
       
       
       
+      <div class="action-btns">
+        <button id="calculate-btn" type="submit">Calculate</button>
+      <button id="reset-btn" type="button">Reset</button>
       
-      <button id="calculate-btn" type="submit">Calculate</button>
-      <button id="reset-btn" type="submit">Reset</button>
+      </div>
       
       
     </form>
@@ -68,6 +74,7 @@
   <script src='./js/script.js' type="text/javascript" charset="utf-8">
     
   </script>
+  </div>
 </body>
 
 </html>
