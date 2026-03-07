@@ -1,6 +1,6 @@
-let total = 0
 
-const formEl = document.getElementById('form');
+
+
 const buttonEl = document.getElementById('calculate-btn');
 
 
@@ -23,7 +23,7 @@ const buttonEl = document.getElementById('calculate-btn');
          total = tip + amountValue
           console.log(total)
           
-          const amountPerPerson = total/peopleValue
+          const amountPerPerson =total/peopleValue
           
           
           const tipDetails = document.querySelector('.tip-details');
