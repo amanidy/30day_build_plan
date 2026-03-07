@@ -75,7 +75,9 @@ header p {
 }
 
 .subtract,
-.increment {
+.increment,
+.increment-people,
+.subtract-people{
   background: #e2e8f0;
   border: none;
   padding: 10px 14px;

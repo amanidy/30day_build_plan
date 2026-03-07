@@ -1,3 +1,12 @@
+let total = 0;
+
+const tipEl = document.getElementById('tip-amount');
+const peopleEl = document.getElementById('people')
+const amountEl = document.getElementById('amount');
+const tipDetails = document.querySelector('.tip-details');
+const totalAmount = document.querySelector('.amount-details');
+const personDetails = document.querySelector('.amount-per-person');
+
 
 
 
@@ -52,6 +61,47 @@ const buttonEl = document.getElementById('calculate-btn');
        
      })
      
+    
+    
+    
+    
+    const subractEl = document.querySelector('.subtract');
+    const addEl = document.querySelector('.increment')
+    const subractPeopleEl=document.querySelector('.subtract-people');
+    const addPeopleEl =document.querySelector('.increment-people')
+    
+    
+    
+    
+    subractEl.addEventListener('click',function(){
+      if (tipEl.value > 1) {
+        tipEl.value--;
+        
+        
+      }
+      
+    })
+    
+    addEl.addEventListener('click',function () {
+      tipEl.value++;
+      
+    })
+    
+    
+    subractPeopleEl.addEventListener('click',function(){
+      if (peopleEl.value > 1) {
+        peopleEl.value--;
+        
+        
+      }
+      
+    })
+    
+    addPeopleEl.addEventListener('click',function () {
+      peopleEl.value++;
+    
+      
+    })
      
      
 
