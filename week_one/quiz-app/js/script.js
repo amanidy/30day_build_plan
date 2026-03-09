@@ -23,28 +23,41 @@ const questions = [
 
 
 
-questions.forEach(question =>{
+questions.forEach((question,index) =>{
   const div = document.createElement('div');
-  div.classList.add('question');
+  
   
   const p = document.createElement('p');
+  p.classList.add('question');
   p.innerHTML = question.question;
   
   div.appendChild(p);
   
   questionsEl.appendChild(div);
   
-})
-
-const questionEl = document.querySelector('.question');
-
-console.log(questionEl)
-
-
-
-
-
-questionEl.addEventListener('click',function(){
+  p.addEventListener('click',function(){
   
   console.log('The question was clicked')
+  
+  const answerEl = document.createElement('div');
+answerEl.classList.add('answer');
+
+
+  
+  const randomIndex = Math.floor(Math.random()* questions[index].answers.length)
+  
+   answerEl.textContent= questions[index].answers[randomIndex];
+  
+  p.appendChild(answerEl);
+  
 })
+
+  
+})
+
+
+
+
+
+
+
